@@ -24,14 +24,18 @@ body {
     text-align: center;
 }
 
+.post-head,
 .header-l,
 .header-r {
     background-color: #f1f1f1;
     /*font-size: 25px;*/
-    grid-area: header-l;
     margin-top: 10px;
     padding: 5px;
     /*text-align: center;*/
+}
+
+.post-head {
+    grid-area: post-head;
 }
 
 .header-l {
@@ -47,6 +51,7 @@ body {
     column-gap: 10px;
     grid-template-areas:
         'header header header header header header'
+        'post-head post-head post-head post-head post-head post-head'
         'header-l header-l header-l header-r header-r header-r'
         'left left middle middle right right'
         'footer footer footer footer footer footer';
@@ -126,6 +131,21 @@ body {
             </p>
         </div>
 
+        <div class="post-head">
+            <center>
+                <h2>Įvyko 35-asis Lietuvos mokinių fizikos čempionatas!</h2>
+            </center>
+            <p>
+                Gruodžio 2 d. penkiuose didžiuosiuose Lietuvos miestuose (Vilniuje, Kaune, Klaipėdoje, Šiauliuose, Panevėžyje) vyko 35-asis Lietuvos mokinių fizikos čempionatas. Šiais metais dalyvavo 457 dalyviai I-IV gimnazinių klasių, kurie atliko vienodas užduotis. Užduočių komplektą sudarė 10 uždavinių iš įvairių fizikos sričių. Geriausiai užduotis atlikusiems mokiniams apdovanojimai bus skiriami atskirose 9-12 klasių grupėse.
+            </p>
+            <p>
+                Skelbiame olimpiados užduotis, su kuriomis galite susipažinti <a href="https://drive.google.com/file/d/13zCx98vjCtmVBcLTHQ15xnlESL8hJhhS/view?usp=sharing">čia.</a> Su užduočių atsakymais galite susipažinti <a href="https://drive.google.com/file/d/1Y4DOTVQuLiNmU_tDvfNxobgxb4zlLC4I/view?usp=sharing">čia.</a>
+            </p>
+            <p>
+                Po olimpiados užduočių autoriai norėtų išgirsti jūsų, olimpiados dalyvių, atsiliepimus, tad kviečiame užpildyti <a href="https://docs.google.com/forms/d/e/1FAIpQLScBk5z1FN53aoJ-RNsV4dPJbf0QuXmjH9zX9qh-88uAFJfhXg/viewform?usp=sf_link">šią anketą</a> ir išsakyti savo nuomonę, jog olimpiados užduočių kokybė ateityje tik augtų. 
+            </p>
+        </div>
+
         <div class="header-l">
             <center>
                 <h2>Skelbiame 15-osios Lietuvos gamtos mokslų olimpiados rezultatus!</h2>
@@ -148,7 +168,6 @@ body {
             3. Vilniaus licėjus</p>
             <p>Aukso, sidabro ir bronzos medalius pelnę mokiniai kviečiami į atrankos į tarptautinę jaunių gamtos mokslų olimpiados stovyklą. Atrankos dalyviai gaus papildomą kvietimą.</p>
             <p>Sveikiname visus laimėtojus ir juos parengusius mokytojus!</p>
-	    <p>Olimpiados protokalą galite rasti <a href="https://drive.google.com/file/d/11dnsmeNU5fDP87H1-onZdAAZ6cqeuiF5/view?usp=drive_link">čia.</a></p>
         </div>
 
         <div class="header-r">
@@ -158,8 +177,7 @@ body {
             <p>Rugsėjo 14 d. nuotoliniu būdu vyko 15-oji Lietuvos gamtos mokslų olimpiada. Šiais metais užduotis sprendė
                 net 1374 dalyviai, kurie buvo suskirstyti į dvi amžiaus grupes: jaunius ir jaunučius.</p>
             <p>Skelbiame olimpiados užduotis, su kuriomis galite susipažinti <a href="https://drive.google.com/drive/folders/1G3eH0Y1uzFHvTCWMsedEdoV13BxDcXWo">čia.</a></p>
-            <p>Su užduočių atsakymais galite susipažinti <a href="https://drive.google.com/drive/folders/1yQte_ew9ne7G-PXD1QhVLSvsAwJqGauZ">čia.</a></p>
-	    <p>Po olimpiados užduočių autoriai norėtų išgirsti jūsų, olimpiados dalyvių, atsiliepimus, tad kviečiame
+            <p>Po olimpiados užduočių autoriai norėtų išgirsti jūsų, olimpiados dalyvių, atsiliepimus, tad kviečiame
                 užpildyti <a href="https://docs.google.com/forms/d/e/1FAIpQLSesPMFH3cVlZqgdy45YjH4F2PrUZr67mJPe1IGd-bW7MmsQJQ/viewform">šią
                     anketą</a> ir išsakyti savo nuomonę, jog olimpiados užduočių kokybė ateityje tik augtų. Užpildę šią
                 anketą mokiniai, turės galimybę susipažinti su užduočių atsakymais anksčiau nei jie bus paskelbti viešai
@@ -192,7 +210,7 @@ body {
             Kontaktai
             <p>Naugarduko 24, Vilnius<br><a href="mailto:info@olimpiados.lt">info@olimpiados.lt</a><br>Mūsų sąskaita:<br>LT63 7044 0600 0772 0261
             </p>
-            <p>Renginių informacija:<br>(Kontaktai bus prieinami vėliau)<br>+370 XXXXXXXX</p>
+            <p>Renginių informacija:<br>Viktorija Prišmontaitė<br>+370 67981328</p>
             <p>Bendradarbiavimo klausimai:<br>Dominykas Žviedrys<br>+370 63762615<br><a href="mailto:dominykas.zviedrys@olimpiados.lt">dominykas.zviedrys@olimpiados.lt</a></p>
         </div>
 
@@ -200,4 +218,4 @@ body {
             <p>Footer</p>
         </div>
     </div>
-<script></script></body>
+</body>

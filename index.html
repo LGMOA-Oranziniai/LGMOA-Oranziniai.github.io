@@ -1,221 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="-1"><style type="text/css">* {
-    box-sizing: border-box;
-}
-
-.link-hide {
-    color: inherit;
-    /* Inherit the text color from the parent */
-    text-decoration: none;
-    /* Remove underline from the link */
-}
-
-body {
-    background-color: #fafafa;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-    background-color: #f1f1f1;
-    font-size: 25px;
-    grid-area: header;
-    /*padding: 5px;*/
-    text-align: center;
-}
-
-.post-head,
-.header-l,
-.header-r {
-    background-color: #f1f1f1;
-    /*font-size: 25px;*/
-    margin-top: 10px;
-    padding: 5px;
-    /*text-align: center;*/
-}
-
-.post-head {
-    grid-area: post-head;
-}
-
-.header-l {
-    grid-area: header-l;
-}
-
-.header-r{
-    grid-area: header-r;
-}
-
-.grid-container {
-    display: grid;
-    column-gap: 10px;
-    grid-template-areas:
-        'header header header header header header'
-        'post-head post-head post-head post-head post-head post-head'
-        'header-l header-l header-l header-r header-r header-r'
-        'left left middle middle right right'
-        'footer footer footer footer footer footer';
-    grid-template-columns: repeat(6, 1fr);
-}
-
-.left,
-.middle,
-.right {
-    background-color: #f1f1f1;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-}
-
-.left {
-    grid-area: left;
-}
-
-.middle {
-    grid-area: middle;
-}
-
-.right {
-    grid-area: right;
-}
-
-.footer {
-    background-color: #f1f1f1;
-    grid-area: footer;
-    padding: 10px;
-    text-align: center;
-}
-
-@media (max-width: 800px) {
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            'header'
-            'header-l'
-            'header-r'
-            'left'
-            'middle'
-            'right'
-            'footer';
-        grid-template-columns: 1fr;
-        grid-column-gap: 0;
-    }
-
-    .left,
-    .middle,
-    .right {
-        padding: 10px;
+<html lang="lt">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="5; url=https://olimpiados.lt" />
+    <title>Peradresuojama...</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #f0983b, #fdd282);
+        font-family: 'Tahoma', sans-serif;
+        color: white;
         text-align: center;
-        margin: 2px 0;
-        /* Adjust the vertical margin here */
-    }
-}</style>
+      }
 
+      p {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+      }
 
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #f0983b;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+        display: inline-block;
+        margin-top: 20px; /* Added spacing between text and button */
+      }
 
-    <title>Olimpiados.lt</title>
-</head>
+      a:hover {
+        background-color: #c8772d;
+      }
 
-<body>
-    <h2>
-        <center>Olimpiados.lt</center>
-    </h2>
-    <p>Puslapis laikinai prieinamas be įrašų. 🔧</p>
+      .container {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
 
-    <div class="grid-container">
-        <div class="header">
-            <p>Praėjusių olimpiadų užduotis rasite <a href="https://drive.google.com/drive/folders/1b_pKL7NsY75-wJJyKO40UwZv10cj5yU8?usp=sharing">čia.</a>
-            </p>
-            <p>Registraciją į BioSa 17 rasite <a href="https://www.facebook.com/Oranziniai/posts/pfbid02Kt2T7GstXVEh8GUbAnvt96zReq1ce5U9UrozAYB2N9dkcSrTpPna5koHvPbbXEWMl">čia.</a>
-            </p>
-        </div>
-
-        <div class="post-head">
-            <center>
-                <h2>Įvyko 35-asis Lietuvos mokinių fizikos čempionatas!</h2>
-            </center>
-            <p>
-                Gruodžio 2 d. penkiuose didžiuosiuose Lietuvos miestuose (Vilniuje, Kaune, Klaipėdoje, Šiauliuose, Panevėžyje) vyko 35-asis Lietuvos mokinių fizikos čempionatas. Šiais metais dalyvavo 457 dalyviai I-IV gimnazinių klasių, kurie atliko vienodas užduotis. Užduočių komplektą sudarė 10 uždavinių iš įvairių fizikos sričių. Geriausiai užduotis atlikusiems mokiniams apdovanojimai bus skiriami atskirose 9–12 klasių grupėse.
-            </p>
-            <p>
-                Skelbiame čempionato užduotis, su kuriomis galite susipažinti <a href="https://drive.google.com/file/d/1ND8EVGl4-fTBiCZfvnlGOQchyIjHxru6/view?usp=sharing">čia.</a> Su užduočių atsakymais galite susipažinti <a href="https://drive.google.com/file/d/1jiTAMUIBIiKY00hM3DmitOMYZk5u-G43/view?usp=sharing">čia.</a>
-            </p>
-            <p>
-                Po čempionato užduočių autoriai norėtų išgirsti jūsų, čempionatų dalyvių, atsiliepimus, tad kviečiame užpildyti <a href="https://docs.google.com/forms/d/e/1FAIpQLScBk5z1FN53aoJ-RNsV4dPJbf0QuXmjH9zX9qh-88uAFJfhXg/viewform?usp=sf_link">šią anketą</a> ir išsakyti savo nuomonę, jog čempionato užduočių kokybė ateityje tik augtų.
-            </p>
-        </div>
-
-        <div class="header-l">
-            <center>
-                <h2>Skelbiame 15-osios Lietuvos gamtos mokslų olimpiados rezultatus!</h2>
-            </center>
-            <p>Skelbiame 15-osios Lietuvos gamtos mokslų olimpiados rezultatus, kuriuos galite rasti <a href="https://docs.google.com/spreadsheets/d/1wJLYRh7xWC64LAP_nw0GpRYbmij-6g0t85KTJCgZGq0">čia.</a></p>
-            <p><b>Jaunučių grupėje aukso medalius laimėjo:</b><br>
-            Elektrėnų „Ąžuolyno“ progimnazijos mokinys <b>Andrius Stankevičius</b>, mokytojai: Kristina Stankevičienė ir Vitalija Kubilienė.<br>
-            Všį Vilniaus inžinerijos ir technologijų licėjaus mokinė <b>Marija Ivaškaitė</b>, mokytojai: Eglė Kunigonienė, Loreta Šimonytė ir Mindaugas Geryba.</p>
-            <p><b>Jaunių grupėje aukso medalius laimėjo:</b><br>
-            Klaipėdos „Ąžuolyno“ gimnazijos mokinys <b>Lukas Mažrimas</b>, mokytojai: Ieva Šiaulienė, Jūratė Dirginčienė ir Saulius Žukauskas.<br>
-            Kaišiadorių r. Rumšiškių Antano Baranausko gimnazijos mokinys <b>Dovydas Šleinius</b>, mokytojai: Sandra Vimantienė, Margarita Kniūkštienė ir Nijolė Šmitienė.</p>
-            <p>Mokyklos buvo reitinguojamos pagal geriausiai olimpiadoje pasirodžiusių 3 mokinių vidurkius.</p>
-            <p><b>Jaunučių grupėje geriausiai pasirodė šios mokyklos:</b><br>
-            1. Panevėžio „Saulėtekio“ progimnazija<br>
-            2. Elektrėnų „Ąžuolyno“ progimnazija<br>
-            3. Vilniaus Tuskulėnų gimnazija</p>
-            <p><b>Jaunių grupėje geriausiai pasirodė šios mokyklos:</b><br>
-            1. Klaipėdos „Ąžuolyno“ gimnazija<br>
-            2. Kauno technologijos universiteto gimnazija<br>
-            3. Vilniaus licėjus</p>
-            <p>Aukso, sidabro ir bronzos medalius pelnę mokiniai kviečiami į atrankos į tarptautinę jaunių gamtos mokslų olimpiados stovyklą. Atrankos dalyviai gaus papildomą kvietimą.</p>
-            <p>Sveikiname visus laimėtojus ir juos parengusius mokytojus!</p>
-        </div>
-
-        <div class="header-r">
-            <center>
-                <h2>Įvyko 15-oji Lietuvos gamtos mokslų olimpiada!</h2>
-            </center>
-            <p>Rugsėjo 14 d. nuotoliniu būdu vyko 15-oji Lietuvos gamtos mokslų olimpiada. Šiais metais užduotis sprendė
-                net 1374 dalyviai, kurie buvo suskirstyti į dvi amžiaus grupes: jaunius ir jaunučius.</p>
-            <p>Skelbiame olimpiados užduotis, su kuriomis galite susipažinti <a href="https://drive.google.com/drive/folders/1G3eH0Y1uzFHvTCWMsedEdoV13BxDcXWo">čia.</a></p>
-            <p>Po olimpiados užduočių autoriai norėtų išgirsti jūsų, olimpiados dalyvių, atsiliepimus, tad kviečiame
-                užpildyti <a href="https://docs.google.com/forms/d/e/1FAIpQLSesPMFH3cVlZqgdy45YjH4F2PrUZr67mJPe1IGd-bW7MmsQJQ/viewform">šią
-                    anketą</a> ir išsakyti savo nuomonę, jog olimpiados užduočių kokybė ateityje tik augtų. Užpildę šią
-                anketą mokiniai, turės galimybę susipažinti su užduočių atsakymais anksčiau nei jie bus paskelbti viešai
-                - atsakymų nuoroda pasirodys pateikus anketą. Vertinimo metu užduočių atsakymai bus atnaujinti ir viešai
-                paskelbti kartu su rezultais.</p>
-            <p>Jaunių amžiaus grupės nugalėtojus jau rugsėjo 29 d. pakviesime dalyvauti atrankoje į tarptautinę gamtos
-                mokslų olimpiadą, kuri vyks Tailande.</p>
-            <p>Olimpiados paskelbimo straipsnį galite rasti <a href="https://drive.google.com/file/d/1SHqppFcQZ-y6dbulmUvbjn9tTYo_ZuLL/view">čia.</a></p>
-        </div>
-
-        <div class="left">
-            Olimpiados.lt informacija
-            <a class="link-hide" href="https://www.facebook.com/olimpiados.lt/">
-                <p>Facebook'e:<br></p>
-                <img decoding="async" loading="lazy" class="alignnone size-full wp-image-178431" src="https://blog-assets.hootsuite.com/wp-content/uploads/2018/09/f-ogo_RGB_HEX-58.png" alt="" width="58" height="58">
-            </a>
-        </div>
-        <div class="middle">
-            LGMOA naujienos
-            <a class="link-hide" href="https://www.facebook.com/Oranziniai">
-                <p>Facebook'e:<br></p>
-                <img decoding="async" loading="lazy" src="https://blog-assets.hootsuite.com/wp-content/uploads/2018/09/f-ogo_RGB_HEX-58.png" alt="" width="58" height="58">
-            </a>
-            <a class="link-hide" href="https://www.instagram.com/lgmoa_oranziniai/">
-                <p>Instagram'e:<br></p>
-                <img decoding="async" loading="lazy" alt="" width="58" height="58" src="https://blog.hootsuite.com/wp-content/uploads/2018/09/glyph-logo_May2016.png">
-            </a>
-        </div>
-        <div class="right">
-            Kontaktai
-            <p>Naugarduko 24, Vilnius<br><a href="mailto:info@olimpiados.lt">info@olimpiados.lt</a><br>Mūsų sąskaita:<br>LT63 7044 0600 0772 0261
-            </p>
-            <p>Renginių informacija:<br>Viktorija Prišmontaitė<br>+370 67981328</p>
-            <p>Bendradarbiavimo klausimai:<br>Dominykas Žviedrys<br>+370 63762615<br><a href="mailto:dominykas.zviedrys@olimpiados.lt">dominykas.zviedrys@olimpiados.lt</a></p>
-        </div>
-
-        <div class="footer">
-            <p>Footer</p>
-        </div>
+      .title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Peradresuojama...</div>
+      <p>Jūs netrukus busite peradresuoti į Olimpiados.lt.</p>
+      <p>Jei jūsų neperadresuoja automatiškai, spustelėkite šią nuorodą:</p>
+      <a href="https://olimpiados.lt">Eiti į Olimpiados.lt</a>
     </div>
-</body>
+  </body>
+</html>
